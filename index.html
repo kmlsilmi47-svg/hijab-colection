@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toko Hijab - Peach Soft</title>
+<style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', 'Segoe UI', sans-serif; }
+    body { background: #FFF7ED; color: #6B4E4F; }
+    .container { max-width: 1000px; margin: 0 auto; }
+
+    
+    .header { background: #FFF1E6; padding: 25px 20px 0; text-align: center; border-bottom: 2px solid #FFDAB9; }
+    .logo img { width: 110px; height: 110px; object-fit: cover; border-radius: 50%; border: 4px solid #FFB7A5; box-shadow: 0 4px 15px rgba(255,183,165,0.4); }
+    
+    .menu { margin-top: 20px; }
+    .menu ul { list-style: none; display: flex; justify-content: center; gap: 8px; }
+    .menu ul li { position: relative; }
+    .menu ul li a { display: block; padding: 12px 25px; color: #8D6E63; text-decoration: none; font-weight: 600; border-radius: 25px; transition: 0.3s; }
+    .menu ul li a:hover { background: #FFB7A5; color: #fff; }
+
+    .submenu { display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); background: #fff; min-width: 160px; border: 1px solid #FFDAB9; border-radius: 12px; overflow: hidden; z-index: 10; box-shadow: 0 10px 20px rgba(0,0,0,0.08); }
+    .menu ul li:hover .submenu { display: block; }
+    .submenu li a { border-radius: 0; text-align: center; padding: 12px 15px; color: #8D6E63 !important; }
+    .submenu li a:hover { background: #FFF1E6 ; color: #FF8A65 ; }
+    
+
+    .jumbotron { 
+        padding: 80px 30px;
+        text-align: center;
+        color: #5D4037;
+        background-image: linear-gradient(rgba(255,247,237,0.85), rgba(255,241,230,0.85)), url('bgrn.jpeg');
+        background-size: cover;
+        background-position: center;
+        border-bottom: 3px solid #FFDAB9;
+    }
+    .jumbotron h2 { font-size: 36px; margin-bottom: 15px; color: #6D4C41; }
+    .jumbotron p { max-width: 700px; margin: 0 auto; line-height: 1.7; color: #8D6E63; }
+
+    /* CONTENT */
+    .content { padding: 50px 20px; text-align: center; background: #FFF7ED; }
+    .content > h2 { font-size: 26px; margin-bottom: 30px; color: #6D4C41; letter-spacing: 1px; }
+    .product-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 25px; }
+
+    .thumbnail { 
+        background: #fff; 
+        border: 1px solid #FFDAB9;
+        width: 270px; 
+        padding: 12px 12px 20px; 
+        border-radius: 20px;
+        transition: 0.3s;
+        box-shadow: 0 5px 15px rgba(255,183,165,0.15);
+    }
+    .thumbnail:hover { transform: translateY(-8px); box-shadow: 0 15px 30px rgba(255,183,165,0.35); border-color: #FFB7A5; }
+    .thumbnail img { width: 100%; height: 280px; object-fit: cover; border-radius: 15px; }
+    .thumbnail h2 { margin: 15px 0 5px; font-size: 17px; color: #6D4C41; }
+    .thumbnail p { color: #FF8A65; font-weight: bold; font-size: 18px; margin-top: 5px; }
+    .thumbnail .btn { display: inline-block; margin-top: 12px; padding: 8px 20px; background: #FFB7A5; color: white; border-radius: 20px; font-size: 13px; font-weight: 600; text-decoration: none; }
+
+    /* FOOTER */
+    .footer { background: #FFDAB9; padding: 25px; text-align: center; color: #8D6E63; margin-top: 40px; }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <div class="logo"><img src="logo.jpeg" alt="logo"></div>
+        <div class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a>
+                    <ul class="submenu">
+                        <li><a href="#">CV</a></li>
+                        <li><a href="#">Education</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="jumbotron">
+        <h2>Selamat Datang di Toko Hijab Kami!</h2>
+        <p>Temukan keindahan dalam kesantunan. Kami menghadirkan koleksi hijab premium dengan bahan terbaik yang nyaman dikenakan sepanjang hari. Sempurnakan pesona muslimah Anda.</p>
+    </div>
+
+    <div class="content">
+        <h2> Best Collection</h2>
+        <div class="product-grid">
+            <div class="thumbnail">
+                <img src="produk3.jpeg" alt="Onesat Tunik">
+                <h2>Onesat Tunik</h2>
+                <p>Rp 80.000</p>
+                <span class="btn">Lihat Detail</span>
+            </div>
+            <div class="thumbnail">
+                <img src="produk1.jpeg" alt="Squer Inner">
+                <h2>Square Inner</h2>
+                <p>Rp 45.000</p>
+                <span class="btn">Lihat Detail</span>
+            </div>
+            <div class="thumbnail">
+                <img src="produk2.jpeg" alt="Set French Khimar">
+                <h2>Set French Khimar</h2>
+                <p>Rp 250.000</p>
+                <span class="btn">Lihat Detail</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer"><p>© 2026 Toko Hijab - Peach Soft Collection</p></div>
+</div>
+
+</body>
+</html>
